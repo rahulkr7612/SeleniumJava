@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/rahuls10/IdeaProjects/Selenium_Maven/src/test/java/TestNGUdemy2">
+        <classes>
+            <class name="TestNGUdemy2.C1">
+                <methods>
+                    <include name="abc"/>
+                </methods>
+            </class>
+            <class name="TestNGUdemy2.C2">
+                <methods>
+                    <include name="xyz"/>
+                </methods>
+            </class>
+            <class name="TestNGUdemy2.C3">
+                <methods>
+                    <include name="pqr"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/rahuls10/IdeaProjects/Selenium_Maven/src/test/java/TestNGUdemy3">
+        <classes>
+            <class name="TestNGUdemy2.C1">
+                <methods>
+                    <include name="abc"/>
+                </methods>
+            </class>
+            <class name="TestNGUdemy2.C2">
+                <methods>
+                    <include name="xyz"/>
+                </methods>
+            </class>
+            <class name="TestNGUdemy2.C3">
+                <methods>
+                    <include name="pqr"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/rahuls10/IdeaProjects/Selenium_Maven">
+        <classes>
+            <class name="priority.priorityExample"/>
+            <class name="testNGAttribute.InnocationCount"/>
+            <class name="testNGAttribute.dependsOn.dependOnGroup"/>
+            <class name="testNGAttribute.dependsOn.dependOnMethod"/>
+            <class name="testNG.beforeandAfterMethodDemo"/>
+            <class name="testNG.testNGExample"/>
+
+        </classes>
+    </test>
+</suite>

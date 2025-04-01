@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="courseName" value="Selenium"></parameter>
+    <parameter name="cityName" value="Pune"></parameter>
+    <parameter name="courseName2" value="Java"></parameter>
+    <parameter name="cityName2" value="Mumbai"></parameter>
+    <parameter name="browserName" value="edge"></parameter>
+    <test verbose="2" preserve-order="true" name="C:/Users/rahuls10/IdeaProjects/Selenium_Maven">
+        <classes>
+            <class name="Parameterization.parameterwithBeforeMethod"/>
+
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"  parallel="tests">
+    <test thread-count="5" verbose="2" preserve-order="true"
+          name="C:/Users/rahuls10/IdeaProjects/Selenium_Maven/src/test/java/TestNGDataProviderDemo/paramTest.java">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="TestNGDataProviderDemo.paramTest">
+                <methods>
+                    <include name="testLogo"/>
+                    <include name="testTitle"/>
+                    <include name="testURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/rahuls10/IdeaProjects/Selenium_Maven/src/test/java/TestNGDataProviderDemo/paramTest.javachrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestNGDataProviderDemo.paramTest">
+                <methods>
+                    <include name="testLogo"/>
+                    <include name="testTitle"/>
+                    <include name="testURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/rahuls10/IdeaProjects/Selenium_Maven/src/test/java/TestNGDataProviderDemo/paramTest.javaFirefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestNGDataProviderDemo.paramTest">
+                <methods>
+                    <include name="testLogo"/>
+                    <include name="testTitle"/>
+                    <include name="testURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

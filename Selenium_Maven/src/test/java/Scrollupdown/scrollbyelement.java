@@ -1,0 +1,25 @@
+package Scrollupdown;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class scrollbyelement {
+    public static void main(String[] args) throws InterruptedException {
+        ChromeOptions chromeoptions = new ChromeOptions();
+        chromeoptions.setBinary("C:\\Users\\rahuls10\\Downloads\\chrome-win64\\chrome.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\rahuls10\\Downloads\\chromedriver-win64/chromedriver.exe");
+        WebDriver driver = new ChromeDriver(chromeoptions);
+        driver.manage().window().maximize();
+        driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
+        WebElement element= driver.findElement(By.xpath("//a[text()='Disclaimer']"));
+        Thread.sleep(5000);
+        JavascriptExecutor js =(JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();",element);
+        Thread.sleep(5000);
+        driver.close();
+    }
+}
