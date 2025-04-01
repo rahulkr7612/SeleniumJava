@@ -35,7 +35,8 @@ public class OrangeHRM {
     void testURL()
     {
         Assert.assertEquals(driver.getCurrentUrl(),"https://opensource-demo.orangehrmlive.com/web/h/login");
-
+        System.out.println("Hellow");
+        System.out.println("Rahul");
     }
     @Test(priority = 3,dependsOnMethods = {"testURL"})
     void testTitle()
