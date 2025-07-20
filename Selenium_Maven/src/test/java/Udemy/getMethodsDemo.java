@@ -22,7 +22,6 @@ public class getMethodsDemo {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[text()='OrangeHRM, Inc']")).click();//open new browser
         Set<String> windowids= driver.getWindowHandles();
-
         System.out.println(windowids);
 
     }

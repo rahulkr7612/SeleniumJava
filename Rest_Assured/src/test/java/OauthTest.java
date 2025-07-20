@@ -39,7 +39,7 @@ public class OauthTest {
 
         System.out.println(gc.getLinkedIn());
         System.out.println(gc.getInstructor());
-        System.out.println(gc.getCourses().getApi().get(1).getCourseTitle());
+        System.out.println(gc.getCourses().getApi().get(1).getCourseTitle());//used index 1
 
         List<api> apiCourse = gc.getCourses().getApi();
         for(int i=0;i<apiCourse.size();i++)
@@ -57,7 +57,6 @@ public class OauthTest {
         for(int j=0;j<wc.size();j++)
         {
             ar.add(wc.get(j).getCourseTitle());
-
         }
         List<String> expectedList= Arrays.asList(courseTitles);
         Assert.assertTrue(ar.equals(expectedList));

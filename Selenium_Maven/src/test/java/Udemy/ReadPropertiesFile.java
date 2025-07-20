@@ -26,7 +26,7 @@ public class ReadPropertiesFile {
         System.out.println(url+" "+password+" "+email+" "+orderid+" "+customerid);
 
         //Reading all the keys
-        //Set<String> keys=propobj.stringPropertyNames();
+        //Set<String> keys=propobj.stringPropertyNames(); It returns a set of keys (as String) from the Properties object — only those keys whose key and value are both Strings.
         //System.out.println(keys);
 
         Set<Object> keys=propobj.keySet();

@@ -17,7 +17,7 @@ public class shadowDOMElements {
         //This Element is inside single shadow DOM.
         //String cssSelectorForHost1 = "book-app[apptitle='BOOKS']";
         //Thread.sleep(1000);
-        SearchContext shadow = driver.findElement(By.cssSelector("book-app[apptitle='BOOKS']")).getShadowRoot();
+        SearchContext shadow = driver.findElement(By.cssSelector("book-app[apptitle='BOOKS']")).getShadowRoot();//get shadow root from shadow host
         Thread.sleep(1000);
         shadow.findElement(By.cssSelector("#input")).sendKeys("Welcome");
     }
